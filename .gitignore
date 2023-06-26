@@ -1,0 +1,5 @@
+.DS_Store
+
+# Omit organ GLBs
+downloaded_organs
+*.glb
