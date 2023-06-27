@@ -1,5 +1,8 @@
 .DS_Store
 
-# Omit organ GLBs
+# Ignore organ GLBs
 downloaded_organs
 *.glb
+
+# Ignore organ CSV
+organ_files.csv

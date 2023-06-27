@@ -18,12 +18,14 @@ def main():
     os.makedirs(save_path, exist_ok=True)
     
     downloaded_url = []
-    csvp = "organ_files.csv"
 
+    # Output a CSV with a mapping of reference organ, scene node, and download URL
+    csvp = "organ_files.csv"
     with open(csvp,"w", newline="") as file:
         writer = csv.writer(file)
         writer.writerow(["ref_organ", "scene_node", "URL"])
 
+    # Loop through API response and download all GLBs into a folder
         for i in response:
             glb_url = i['glb_url'].strip('"')
             organ_name = i['scene_node'].strip('"')
