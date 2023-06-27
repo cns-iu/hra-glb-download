@@ -1,1 +1,2 @@
 # hra-glb-download
+This repository contains code to download all the GLB models of the latest HRA release to a local folder. It uses the CCF API and a SPARQL query: [http://grlc.io/api-git/hubmapconsortium/ccf-grlc/subdir/ccf//ref-organ-glb-files?endpoint=https%3A%2F%2Fccf-api.hubmapconsortium.org%2Fv1%2Fsparql?format=application/json](http://grlc.io/api-git/hubmapconsortium/ccf-grlc/subdir/ccf//ref-organ-glb-files?endpoint=https%3A%2F%2Fccf-api.hubmapconsortium.org%2Fv1%2Fsparql?format=application/json)
