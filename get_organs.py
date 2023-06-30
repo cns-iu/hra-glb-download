@@ -22,6 +22,7 @@ def main():
     os.makedirs(args.output_folder, exist_ok=True)
 
     with open(args.csv_file, "w", newline="") as file:
+
         writer = csv.writer(file)
         writer.writerow(["ref_organ", "scene_node", "URL"])
         for item in data:
@@ -37,6 +38,6 @@ def main():
                         file.write(glb_response.content)
                         print(f"Downloaded {file_name}")
                         writer.writerow([item.get('ref_organ', '').strip('"'), organ_name, glb_url])
-
+                        
 if __name__ == "__main__":
     main()
