@@ -11,7 +11,7 @@ def main():
     parser.add_argument("--url", type=str, help="URL of the API", default=link)
     parser.add_argument("--output-folder", type=str, help="Folder to save downloaded GLB files", default="downloaded_organs/")
     parser.add_argument("--csv-file", type=str, help="Path to the output CSV file", default="organ_files.csv")
-    args = parser.parse_args()
+    args, unknown = parser.parse_known_args()
     api_url = args.url
 
     response = requests.get(api_url).text
