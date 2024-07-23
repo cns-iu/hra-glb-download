@@ -14,7 +14,7 @@ def main():
 
     # Use `argparse` to build URL
     parser = argparse.ArgumentParser(
-        description="Download GLB files from CCF API")
+        description="Download GLB files from HRA API")
     parser.add_argument("--url", type=str,
                         help="URL of the API", default=endpoint)
     parser.add_argument("--output-folder", type=str,
