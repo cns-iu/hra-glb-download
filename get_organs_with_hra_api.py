@@ -10,7 +10,7 @@ def main():
     """
 
     # get data from HRA API endpoint
-    endpoint = "https://apps.humanatlas.io/api/v1/reference-organs"
+    endpoint = "https://apps.humanatlas.io/api--staging/v1/reference-organs" # uses --staging to always get models pre-release
 
     # Use `argparse` to build URL
     parser = argparse.ArgumentParser(
